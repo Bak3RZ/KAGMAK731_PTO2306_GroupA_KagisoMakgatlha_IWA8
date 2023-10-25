@@ -26,7 +26,7 @@ const leo = {
 }
 
 const sarah = {
-	name : sarahName + 'Kleinhans', 
+	name : sarahName + sarahSurname, 
 	age : 62,
 	accessId : '6b279ae5-5657-4240-80e9-23f6b635f7a8',
 	balance : parseFloat(sarahBalance).toFixed(2),
@@ -37,8 +37,8 @@ const sarah = {
 	}
 }
 
-console.log(leo, leo.address)
-console.log(sarah, sarah.address)
+console.log(leo, leo.address['postal-code'])
+console.log(sarah, sarah.address['postal-code'])
 
 // replaced '=' with ':' operator
 // removed 'leoSurname' since const leoName declares surname already
